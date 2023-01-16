@@ -184,7 +184,7 @@ body {
   margin-bottom: 120px;
 }
 .img_box {
-  margin-top: 20px;
+  margin-top: 42px;
 }
 .img_box li {
   background: none;
@@ -412,4 +412,7 @@ body {
 @media screen and (max-width: 320px) {
 }
 @media screen and (max-width: 280px) {
+  .back_txt.right {
+    top: 55%;
+  }
 }
