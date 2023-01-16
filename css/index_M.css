@@ -351,8 +351,8 @@ body {
   padding: 0 15px;
 }
 .area .btn-close {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   margin-top: 27px;
   right: 15px;
 }
@@ -370,7 +370,7 @@ body {
   font-size: 20px;
 }
 #sitemapContent03 .modal-close-btn i {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1;
 }
 .sitemap-wrapper03 > div > ul {
