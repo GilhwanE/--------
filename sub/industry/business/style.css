@@ -1,5 +1,5 @@
 .visual-img-con {
-  background: url(/sub/industry/bvision/img/vision_bg.png) no-repeat;
+  background: url(../../../sub/industry/bvision/img/vision_bg.png) no-repeat;
 }
 
 .wrap-list {
@@ -48,13 +48,13 @@
   color: #7d7d7d;
 }
 .imgbox .img {
-  background: url(img/Big_business_img01.png) no-repeat 50% 50%;
+  background: url(./img/Big_business_img01.png) no-repeat 50% 50%;
   background-size: cover;
   padding: 150px 0;
   background-attachment: fixed;
 }
 .imgbox.two .img {
-  background: url(img/Big_business_img02.png) no-repeat 50% 50%;
+  background: url(./img/Big_business_img02.png) no-repeat 50% 50%;
   background-size: cover;
   padding: 150px 0;
   background-attachment: fixed;
