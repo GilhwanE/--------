@@ -277,6 +277,9 @@ body {
 }
 
 /* footer */
+#footer {
+  padding-top: 15px;
+}
 .footer_list {
   flex-direction: column;
   gap: 0;
@@ -295,6 +298,7 @@ body {
   font-size: 9px;
 }
 .footer_list .addr li {
+  font-weight: 200;
   font-size: 8px;
 }
 .footer_list .addr .tel {
@@ -306,6 +310,7 @@ body {
   margin-left: 0;
 }
 .footer_list .rights span {
+  font-weight: 200;
   font-size: 7px;
   line-height: 7px;
 }
