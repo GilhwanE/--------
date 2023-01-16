@@ -584,7 +584,7 @@ body {
   position: absolute;
   right: 103px;
   bottom: 0;
-  z-index: 11;
+  z-index: 1;
 }
 #banner .slide-common img {
   width: 100%;
@@ -1379,7 +1379,7 @@ body {
     justify-content: center;
   }
   .link_btn a p {
-    font-size: 11px;
+    font-size: 13px;
   }
   #footer {
     padding-top: 40px;

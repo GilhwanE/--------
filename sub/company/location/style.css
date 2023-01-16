@@ -150,8 +150,8 @@
 @media screen and (max-width: 1023px) {
   .map-image {
     background: url(./img/map_img.png) no-repeat center;
-    height: 90vh;
-    background-size: 80%;
+    height: 60vh;
+    background-size: 90%;
   }
   .wrap-map {
     margin-bottom: 100px;
@@ -162,7 +162,7 @@
     gap: 30px;
     align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 40px;
   }
   .map-box {
     margin-bottom: 0;
@@ -199,6 +199,9 @@
   .map-box dl {
     min-width: 242px;
   }
+  .wrap-map .inner {
+    margin-top: 10px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -214,17 +217,17 @@
   .map-box dl {
     width: 100%;
     min-width: 122px;
-    padding: 14px 22px;
+    padding: 14px 15px;
     height: 100%;
   }
   .map-box dl dt {
-    font-size: 10px;
+    font-size: 13px;
     line-height: 20px;
     margin-bottom: 17px;
   }
   .map-box dl dd {
-    font-size: 5px;
-    line-height: 5px;
+    font-size: 13px;
+    line-height: 1;
   }
   .map-box dl dt::after {
     top: 25px;
@@ -232,5 +235,16 @@
   .map-image {
     height: 50vh;
     background-size: 100%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .map-box dl dt,
+  .map-box dl dd {
+    font-size: 11px;
+  }
+  .map-box dl dd:last-child {
+    margin-top: 1px;
+    white-space: nowrap;
   }
 }

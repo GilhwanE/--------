@@ -211,7 +211,7 @@
     line-height: 20px;
   }
   .history-list li p {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 20px;
     padding-left: 10px;
     word-break: keep-all;
@@ -242,5 +242,11 @@
   .history-area div:nth-child(odd) ul,
   .history-area ul {
     padding-left: 22px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .history-list li p {
+    font-size: 11px;
   }
 }

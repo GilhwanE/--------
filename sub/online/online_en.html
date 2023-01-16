@@ -352,23 +352,32 @@
                     <td colspan="2">
                       <div class="contact_form_box">
                         <span class="contact_form_label require">Email<i>*</i></span>
-                        <input
-                          type="text"
-                          id="email"
-                          name="email01"
-                          size="20"
-                          maxlength="20"
-                          value=""
-                          required=""
-                          autocomplete="off"
-                          class="contact_form_input"
-                        /><span>@</span>
-                        <input id="email" name="email02" required="" list="domains" placeholder="naver.com" />
-                        <datalist id="domains">
-                          <option value="naver.com"></option>
-                          <option value="daum.net"></option>
-                          <option value="gmail.com"></option>
-                        </datalist>
+                        <div class="wrap-email">
+                          <input
+                            type="text"
+                            id="email"
+                            name="email01"
+                            size="20"
+                            maxlength="20"
+                            value=""
+                            required=""
+                            autocomplete="off"
+                            class="contact_form_input"
+                          /><span>@</span>
+                          <input
+                            id="email"
+                            name="email02"
+                            required=""
+                            list="domains"
+                            placeholder="naver.com"
+                            class="domain"
+                          />
+                          <datalist id="domains">
+                            <option value="naver.com"></option>
+                            <option value="daum.net"></option>
+                            <option value="gmail.com"></option>
+                          </datalist>
+                        </div>
                       </div>
                     </td>
                   </tr>

@@ -24,12 +24,12 @@
   position: relative;
   margin-left: 28px;
 }
-.sign p:last-child::after {
+/* .sign p:last-child::after {
   content: "사인";
   position: absolute;
   top: 0;
   right: -80px;
-}
+} */
 .main-info {
   margin-top: 60px;
   margin-bottom: 20px;
@@ -89,8 +89,8 @@
     line-height: 18px;
   }
   .main-info p {
-    font-size: 11px;
-    line-height: 15px;
+    font-size: 13px;
+    line-height: 18px;
   }
   .sign {
     justify-content: center;
@@ -101,5 +101,12 @@
   }
   .sign p:last-child {
     margin-left: 11px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .main-info p {
+    font-size: 11px;
+    line-height: 15px;
   }
 }

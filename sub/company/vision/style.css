@@ -130,7 +130,7 @@
     flex-direction: column;
   }
   .down-box li {
-    font-size: 11px;
+    font-size: 13px;
   }
   .down-box li::before {
     left: -50px;
@@ -159,7 +159,7 @@
     margin-bottom: 0;
   }
   .wrap-list .txt span {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 20px;
   }
   .wrap-list .txt span br {
@@ -177,4 +177,10 @@
 [data-aos="new-animation"].aos-animate {
   opacity: 1;
   transform: translateZ(0) scale(1);
+}
+
+@media screen and (max-width: 280px) {
+  .wrap-list .txt span {
+    font-size: 11px;
+  }
 }

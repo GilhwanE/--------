@@ -6,13 +6,35 @@ const hiddenBtn2 = document.querySelector(".imgbox .txt .sec2");
 hiddenBtn1.addEventListener("click", (e) => {
   e.preventDefault();
   hiddenBtn1.classList.toggle("on");
-  contentBox1.classList.toggle("on");
+  //   contentBox1.classList.toggle("on");
 });
 
 hiddenBtn2.addEventListener("click", (e) => {
   e.preventDefault();
   hiddenBtn2.classList.toggle("on");
-  contentBox2.classList.toggle("on");
+  //   contentBox2.classList.toggle("on");
+});
+
+$(".imgbox .txt .sec1").click(function () {
+  if ($(".content-hide.sec1").is(":visible")) {
+    $(".content-hide.sec1").slideUp();
+  } else {
+    $(".content-hide.sec1").slideDown({
+      start: function () {
+        $(this).css({
+          display: "flex",
+        });
+      },
+    });
+  }
+});
+
+$(".imgbox .txt .sec2").click(function () {
+  if ($(".content-hide.sec2").is(":visible")) {
+    $(".content-hide.sec2").slideUp(699);
+  } else {
+    $(".content-hide.sec2").slideDown(699);
+  }
 });
 
 $(function () {
@@ -22,7 +44,8 @@ $(function () {
   function resizeSwiper() {
     if (Win_W < 601 && Wedo_Slider == undefined) {
       Wedo_Slider = new Swiper(".m-swiper", {
-        spaceBetween: 0,
+        slidesPerView: 1,
+        spaceBetween: 8,
         loop: false,
         // autoplay: {
         //   delay: 5000,
@@ -60,7 +83,7 @@ $(function () {
         breakpoints: {
           280: {
             slidesPerView: 1,
-            spaceBetween: 30,
+            spaceBetween: 8,
           },
           600: {
             slidesPerView: "auto",

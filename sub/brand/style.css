@@ -59,6 +59,9 @@
   .brand-content.urban {
     margin-bottom: 100px;
   }
+  .brand-content .img {
+    background-position: 100%;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -79,11 +82,17 @@
     margin-bottom: 25px;
   }
   .con-txt p {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 20px;
     word-break: keep-all;
   }
   .con-txt p br {
     display: none;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .con-txt p {
+    font-size: 11px;
   }
 }

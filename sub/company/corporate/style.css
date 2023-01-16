@@ -78,10 +78,16 @@
     margin-bottom: 30px;
   }
   .wrap-list .content p {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 20px;
   }
   .wrap-list .content img {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .wrap-list .content p {
+    font-size: 11px;
   }
 }

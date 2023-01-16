@@ -26,6 +26,10 @@
   transition: all 300ms ease-in;
   cursor: pointer;
 }
+.imgbox .txt button i {
+  font-size: 18px;
+  color: #7d7d7d;
+}
 .imgbox .txt .on {
   transform: rotate(180deg);
 }
@@ -141,18 +145,7 @@
   width: 40%;
 }
 .content-hide {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 200ms ease-in-out;
   display: none;
-}
-.content-hide.on {
-  visibility: visible;
-  opacity: 1;
-  display: flex;
-}
-.content-hide.sec2.on {
-  display: block;
 }
 .content-circle ul {
   display: flex;
@@ -201,9 +194,20 @@
 .imglist .swiper-slide {
   width: 33.33%;
 }
+.imglist .swiper-slide img {
+  width: 100%;
+  height: 294px;
+  object-fit: cover;
+  max-width: 212px;
+}
 .imglist .swiper-wrapper {
   gap: 15px;
   justify-content: flex-end;
+}
+.content-img img {
+  width: 688px;
+  height: 294px;
+  object-fit: cover;
 }
 
 /* swiper */
@@ -294,7 +298,10 @@
     justify-content: center;
   }
   .imglist.m-swiper .swiper-wrapper {
-    justify-content: flex-start;
+    justify-content: center;
+  }
+  .imglist .swiper-slide img {
+    height: 200px;
   }
   .mt-swiper .swiper-slide img {
     width: 241px;
@@ -322,13 +329,14 @@
     margin-bottom: 15px;
   }
   .imgbox .txt p {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 20px;
   }
   .circle .point {
     font-size: 13px;
     line-height: 16px;
     margin-bottom: 15px;
+    white-space: normal;
   }
   .circle li {
     width: 200px;
@@ -339,7 +347,7 @@
     height: 250px;
   }
   .circle li p {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 20px;
   }
   .circle li p br {
@@ -361,7 +369,8 @@
     margin-bottom: 50px;
   }
   .content-img .imglist img {
-    width: 220px;
+    width: 100%;
+    max-width: none;
   }
   .content-img .imglist {
     justify-content: center;
@@ -393,8 +402,13 @@
   .imglist .swiper-wrapper {
     gap: 0;
   }
+  .imglist.m-swiper .swiper-wrapper {
+    justify-content: flex-start;
+  }
+  .imgbox .txt button i {
+    font-size: 11px;
+  }
   .imglist .pc {
-    display: none;
   }
   .imglist .m {
     display: block;
@@ -422,7 +436,7 @@
     height: 150px;
   }
   .content-circle ul li p {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 20px;
   }
   .content-circle .point {
@@ -442,8 +456,18 @@
     line-height: 20px;
   }
   .mt-swiper .swiper-slide img {
-    width: 220px;
+    width: 100%;
     height: 200px;
     border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .imgbox .txt p {
+    font-size: 11px;
+  }
+  .circle li p,
+  .content-circle ul li p {
+    font-size: 11px;
   }
 }

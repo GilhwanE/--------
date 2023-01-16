@@ -414,11 +414,19 @@ body {
 }
 
 @media screen and (max-width: 375px) {
+  .content_txt p {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 @media screen and (max-width: 320px) {
 }
 @media screen and (max-width: 280px) {
-  .back_txt.right {
-    top: 55%;
+  .content_txt p {
+    font-size: 11px;
+    line-height: 17px;
+  }
+  .link_btn a p {
+    font-size: 11px;
   }
 }

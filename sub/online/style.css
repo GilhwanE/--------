@@ -13,6 +13,9 @@ input:-webkit-autofill:active {
   -webkit-transition: background-color 9999s ease-out;
   -webkit-box-shadow: 0 0 0px 1000px white inset !important;
 }
+input::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
 .visual-img-con {
   background: url(img/online_bg.png) no-repeat;
 }
@@ -61,6 +64,9 @@ input:-webkit-autofill:active {
   transform-origin: left center;
   transition: all 300ms ease-in;
   z-index: 11;
+}
+#contact-form tr:first-child .contact_form_box::before {
+  border-bottom: none;
 }
 #contact-form .contact_form_box.focus::before,
 #contact-form .contact_form_box .wrap-email.focus::before {
@@ -247,6 +253,11 @@ label {
   border-radius: 3px;
   border: 1px solid #c8c8c8;
 }
+#contact-form .domain {
+  position: relative;
+  background: url(./img/option_icon.svg) no-repeat 70%;
+}
+
 input[type="checkbox"] + label {
   position: relative;
   padding-left: 39px;
@@ -350,11 +361,13 @@ input[type="checkbox"]:checked + label::after {
   #contact-form {
     margin-bottom: 38px;
   }
+
   #contact-form input {
     width: 100%;
     font-size: 15px;
     line-height: 18px;
-    padding-right: 20px;
+    padding: 13px 0;
+    height: auto;
   }
   #contact-form .contact_form_submitBtn {
     font-size: 15px;
@@ -376,6 +389,9 @@ input[type="checkbox"]:checked + label::after {
     margin-right: 10px;
     flex-basis: 0;
     flex: 0;
+  }
+  #contact-form .domain {
+    background: url(./img/option_icon.svg) no-repeat 90%;
   }
   .wrap-agree label:before,
   input[type="checkbox"]:checked + label::after {
