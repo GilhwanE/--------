@@ -57,7 +57,13 @@ body {
   width: 30px;
   height: 30px;
   background-size: 100%;
+
+  background-color: rgba(255, 255, 245, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
 }
+
 .main_visual-txt-con p {
   font-size: 30px;
   line-height: 100%;
