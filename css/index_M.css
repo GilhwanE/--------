@@ -362,15 +362,21 @@ body {
   margin-top: 27px;
   right: 15px;
 }
-.is-open .sitemap-2dep {
-  max-height: 250px;
-  padding: 15px 20px;
-  border-top: 1px solid #fff;
+.drawer-menu-button .sitemap-2dep {
+  height: 0;
+  background: rgba(255, 255, 255, 0.24);
+  backdrop-filter: blur(2.5px);
+  margin-top: 1px;
+  padding: 0px 20px;
+  overflow: hidden;
+  transform: translateY(-10%);
+  transition: height 600ms ease-in-out, transform 600ms ease-in-out, padding 600ms ease-in-out;
 }
 .drawer-menu-button.is-open .sitemap-2dep {
-  max-height: 250px;
-  padding: 15px 20px;
+  height: 100px;
   border-top: 1px solid #fff;
+  padding: 20px;
+  transform: translateY(0%);
 }
 .modal-close-btn {
   font-size: 20px;
@@ -399,15 +405,7 @@ body {
 .sitemap-wrapper03 p {
   display: none;
 }
-.sitemap-2dep {
-  max-height: 0;
-  background: rgba(255, 255, 255, 0.24);
-  backdrop-filter: blur(2.5px);
-  margin-top: 0;
-  padding: 0 15px;
-  overflow: hidden;
-  transition: all 400ms cubic-bezier(0.24, 0.4, 0.4, 0.53);
-}
+
 .sitemap-wrapper03 > div > ul > li,
 .sitemap-wrapper03 > div > ul > li:first-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.21);
