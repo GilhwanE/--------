@@ -5,7 +5,7 @@
 }
 
 .visual-img-con {
-  background: url(/newimg/ceo_bg.png) no-repeat;
+  background: url(../../../newimg/ceo_bg.png) no-repeat;
 }
 
 .visual-txt-container {
@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 1023px) {
   .visual-img-con {
-    background: url(/newimg/ceo_bg.png) no-repeat 33%;
+    background: url(../../../newimg/ceo_bg.png) no-repeat 33%;
   }
   .main-img-box .pc {
     display: none;
