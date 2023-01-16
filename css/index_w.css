@@ -293,7 +293,7 @@ body {
   margin: 7px 0;
 }
 #header.navbar_scroll {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #ffffff;
   backdrop-filter: blur(6.5px);
 }
