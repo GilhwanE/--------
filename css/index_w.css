@@ -99,12 +99,20 @@ body {
   background: url(../newimg/btn-l.png) no-repeat center;
   border-radius: 50%;
   margin-right: 17px;
+  background-color: rgba(255, 255, 245, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
 }
 .main-swiper-button-next {
   width: 44px;
   height: 44px;
   background: url(../newimg/btn-r.png) no-repeat center;
   border-radius: 50%;
+  background-color: rgba(255, 255, 245, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
 }
 .swiper-pagination {
   position: relative;
