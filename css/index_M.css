@@ -67,6 +67,7 @@ body {
 .main_visual-txt-con p {
   font-size: 30px;
   line-height: 100%;
+  white-space: normal;
 }
 .main_visual-txt-con .sub {
   font-size: 13px;
