@@ -1,0 +1,236 @@
+.visual-img-con {
+  background: url(/newimg/ceo_bg.png) no-repeat;
+}
+.map-icon {
+  position: absolute;
+  background: url(img/loaction-icon.svg) no-repeat center;
+  width: 38px;
+  height: 50px;
+  transition: all 300ms ease-in;
+}
+.map-icon.on {
+  transform: scale(1.2) !important;
+  animation: motion 1.5s linear 0s infinite;
+  margin-top: 0;
+}
+
+@keyframes motion {
+  0% {
+    margin-top: 0px;
+  }
+  20% {
+    margin-top: 10px;
+  }
+  40% {
+    margin-top: 0px;
+  }
+  60% {
+    margin-top: 10px;
+  }
+  80% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+.map-icon.so {
+  left: 40%;
+  top: 18%;
+}
+.map-icon.gy1 {
+  left: 45%;
+  top: 15%;
+}
+.map-icon.gy2 {
+  left: 45%;
+  top: 20%;
+}
+.map-icon.se {
+  left: 45%;
+  top: 30%;
+}
+.map-icon.de {
+  left: 43%;
+  top: 34%;
+}
+.map-box {
+  display: flex;
+  width: 282px;
+  flex: 50%;
+  margin-bottom: 30px;
+}
+.map-box:nth-child(even) {
+  justify-content: flex-end;
+}
+.map-box dl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  min-width: 282px;
+  height: 100%;
+  max-height: 181px;
+  padding: 45px 54px;
+  background-color: #ffffff;
+  border: 1px solid #c6c6c6;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: border 100ms ease-in-out;
+  cursor: pointer;
+}
+.map-box dl.on {
+  border: 3px solid #87c313;
+}
+.map-box dl dt {
+  position: relative;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 20px;
+  letter-spacing: -0.05em;
+  color: #191919;
+  margin-bottom: 40px;
+}
+.map-box dl dt::after {
+  content: "";
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  max-width: 175px;
+  height: 1px;
+  background-color: #c8c8c8;
+}
+.map-box dl dd {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.05em;
+  color: #7d7d7d;
+}
+.map-box dl dd:last-child {
+  margin-top: 10px;
+}
+.map-box dl:hover {
+  border: 3px solid #87c313;
+}
+.wrap-map {
+  height: 100vh;
+  background: url(img/map_img.png) no-repeat 50% 0;
+}
+.wrap-map .inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 210px;
+}
+
+@media screen and (max-width: 1200px) {
+  .map-box dl {
+    max-width: 242px;
+    max-height: 147px;
+    height: 147px;
+    padding: 30px 44px;
+  }
+  .map-box dl dt {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+  .map-box dl dd {
+    font-size: 15px;
+    line-height: 15px;
+  }
+  .map-box dl dt::after {
+    top: 32px;
+  }
+  .wrap-map {
+    background-size: 60%;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .map-image {
+    background: url(img/map_img.png) no-repeat center;
+    height: 90vh;
+    background-size: 80%;
+  }
+  .wrap-map {
+    margin-bottom: 100px;
+    height: auto;
+    background: none;
+  }
+  .wrap-map .inner {
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  .map-box {
+    margin-bottom: 0;
+    flex: initial;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .map-icon {
+    width: 20px;
+    height: 28px;
+    background: url(img/loaction-icon.svg) no-repeat center / cover;
+  }
+  .map-icon.so {
+    top: 20%;
+  }
+  .map-icon.gy1 {
+    top: 19%;
+  }
+  .map-icon.gy2 {
+    top: 22%;
+  }
+  .map-icon.se {
+    top: 27%;
+  }
+  .map-icon.de {
+    top: 30%;
+  }
+  .map-box {
+    width: 100%;
+    flex: 1;
+  }
+  .map-box dl {
+    min-width: 242px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .map-icon {
+    width: 12px;
+    height: 17px;
+  }
+  .wrap-map .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 6px;
+  }
+  .map-box dl {
+    width: 100%;
+    min-width: 122px;
+    padding: 14px 22px;
+    height: 100%;
+  }
+  .map-box dl dt {
+    font-size: 10px;
+    line-height: 20px;
+    margin-bottom: 17px;
+  }
+  .map-box dl dd {
+    font-size: 5px;
+    line-height: 5px;
+  }
+  .map-box dl dt::after {
+    top: 25px;
+  }
+  .map-image {
+    height: 50vh;
+    background-size: 100%;
+  }
+}

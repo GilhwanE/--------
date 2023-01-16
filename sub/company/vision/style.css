@@ -1,0 +1,180 @@
+.visual-img-con {
+  background: url(/newimg/ceo_bg.png) no-repeat;
+}
+.wrap-list ul {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+.wrap-list ul:last-child {
+  margin-bottom: 0;
+}
+.wrap-list ul li img {
+  width: 100%;
+  height: auto;
+  transition: transform 300ms ease-in-out;
+  transform: scale(1);
+}
+.wrap-list ul li img:hover {
+}
+
+.wrap-list .txt {
+  margin-bottom: 50px;
+}
+.wrap-list ul:last-child .txt {
+  margin-bottom: 0;
+}
+.wrap-list .txt p {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 32px;
+  letter-spacing: -0.05em;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.wrap-list .txt span {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.05em;
+  color: #000000;
+}
+.wrap-list .txt.mr {
+  margin-right: 200px;
+}
+.wrap-list .txt.ml {
+  margin-left: 100px;
+}
+.down-box {
+  display: flex;
+  gap: 115px;
+  margin-top: 30px;
+  padding-left: 65px;
+}
+
+.down-box li {
+  position: relative;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 100%;
+  color: #191919;
+  cursor: pointer;
+}
+.down-box li::before {
+  content: "";
+  position: absolute;
+  left: -70px;
+  bottom: -20px;
+  background: url(/sub/company/vision/img/down_icon.svg) no-repeat;
+  width: 50px;
+  height: 50px;
+}
+.main-img-box img {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrap-list .txt.mr {
+    margin-right: 0;
+  }
+  .wrap-list .txt.ml {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .wrap-list {
+    padding: 50px 0;
+  }
+  .wrap-list ul {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    gap: 34px;
+    overflow: hidden;
+  }
+  .wrap-list ul li {
+    width: 100%;
+  }
+  .wrap-list ul:nth-child(2n) {
+    flex-direction: column-reverse;
+  }
+  .wrap-list ul li img {
+    object-fit: cover;
+    max-height: 372px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-img-box img {
+    object-position: 40%;
+  }
+  .main-info-txt {
+    padding: 0 15px;
+    bottom: -10rem;
+    gap: 0;
+  }
+  .main-info-txt > div {
+    transform: translateY(0);
+  }
+  .down-box {
+    gap: 32px;
+    margin-top: 30px;
+    padding-left: 50px;
+    flex-direction: column;
+  }
+  .down-box li {
+    font-size: 11px;
+  }
+  .down-box li::before {
+    left: -50px;
+    bottom: -10px;
+    background: url(/sub/company/vision/img/down_icon.svg) no-repeat center / cover;
+    width: 30px;
+    height: 30px;
+  }
+  .wrap-list {
+    margin-top: 300px;
+  }
+  .wrap-list ul {
+    gap: 10px;
+    margin-bottom: 25px;
+  }
+  .wrap-list ul li img {
+    max-height: 150px;
+  }
+  .wrap-list .txt p {
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 0px;
+  }
+  .wrap-list .txt.mr,
+  .wrap-list .txt.ml {
+    margin-bottom: 0;
+  }
+  .wrap-list .txt span {
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .wrap-list .txt span br {
+    display: none;
+  }
+}
+
+/* Animation */
+[data-aos="new-animation"] {
+  opacity: 0;
+  transform: translate3d(0, 100px, 0) scale(0.9);
+  transition: transform, opacity 2.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+[data-aos="new-animation"].aos-animate {
+  opacity: 1;
+  transform: translateZ(0) scale(1);
+}

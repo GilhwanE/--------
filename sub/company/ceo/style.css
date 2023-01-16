@@ -1,0 +1,105 @@
+#visual {
+  position: relative;
+  width: 100%;
+  height: 360px;
+}
+
+.visual-img-con {
+  background: url(/newimg/ceo_bg.png) no-repeat;
+}
+
+.visual-txt-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18rem;
+}
+.sign {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-bottom: 42px;
+}
+.sign p:last-child {
+  position: relative;
+  margin-left: 28px;
+}
+.sign p:last-child::after {
+  content: "사인";
+  position: absolute;
+  top: 0;
+  right: -80px;
+}
+.main-info {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.main-info p {
+  margin-top: 60px;
+}
+.main-info span {
+  display: block;
+  margin-bottom: 28px;
+}
+.main-img-box .pc {
+  display: block;
+}
+.main-img-box .t {
+  display: none;
+}
+.main-img-box .m {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .visual-img-con {
+    background: url(/newimg/ceo_bg.png) no-repeat 33%;
+  }
+  .main-img-box .pc {
+    display: none;
+  }
+  .main-img-box .t {
+    display: block;
+  }
+  .main-info h3 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  .main-info p {
+    font-size: 15px;
+    line-height: 21px;
+    word-break: keep-all;
+    margin-top: 50px;
+  }
+  .sign p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-img-box .t {
+    display: none;
+  }
+  .main-img-box .m {
+    display: block;
+  }
+  .main-info h3 {
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .main-info p {
+    font-size: 11px;
+    line-height: 15px;
+  }
+  .sign {
+    justify-content: center;
+  }
+  .sign p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  .sign p:last-child {
+    margin-left: 11px;
+  }
+}
