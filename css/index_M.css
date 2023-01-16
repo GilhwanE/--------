@@ -49,7 +49,7 @@ body {
 .color_logo img {
   width: 98px;
 }
-#banner .main_visual::before {
+#banner .slide-common {
   display: none;
 }
 .main-swiper-button-next,

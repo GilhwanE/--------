@@ -580,7 +580,17 @@ body {
   width: 100%;
   height: 100vh;
 }
-#banner .main_visual::before {
+#banner .slide-common {
+  position: absolute;
+  right: 103px;
+  bottom: 0;
+  z-index: 11;
+}
+#banner .slide-common img {
+  width: 100%;
+  height: 100%;
+}
+/* #banner .main_visual::before {
   content: "";
   position: absolute;
   right: 103px;
@@ -589,7 +599,7 @@ body {
   height: 100%;
   background: url(../newimg/triImg.png) no-repeat right bottom;
   background-size: 40%;
-}
+} */
 .main_visual-txt-con {
   position: absolute;
   height: auto;
@@ -1035,9 +1045,8 @@ body {
   .mainVisualControls .swiper-progress-bar {
     width: 100%;
   }
-  #banner .main_visual::before {
+  #banner .slide-common {
     right: 0;
-    background-size: 60%;
   }
   #sitemapContent03 h1 {
     margin-left: 80px;
@@ -1149,12 +1158,8 @@ body {
   #banner .main_visual img {
     object-fit: cover;
   }
-  #banner .main_visual::before {
+  #banner .slide-common {
     right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    background-size: 70%;
   }
   #header .gnb li {
     display: none;
