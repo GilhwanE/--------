@@ -1329,6 +1329,9 @@ body {
     display: block;
     z-index: 11;
   }
+  .back_txt p {
+    -webkit-text-stroke: 1px #889a82;
+  }
   .back_txt.right p {
     font-size: 50px;
     line-height: 66px;
