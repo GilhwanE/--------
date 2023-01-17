@@ -2,7 +2,7 @@
   background: url(./img/brand_bg.png) no-repeat;
 }
 .brand-content .img {
-  background: url(./img/b_lam_img.png) no-repeat 50%;
+  background: url(./img/b_lam_img.webp) no-repeat 50%;
   background-size: cover;
   padding: 150px 0;
   background-attachment: fixed;
@@ -10,7 +10,7 @@
   border-radius: 10px;
 }
 .brand-content.urban .img {
-  background: url(./img/b_urban_img.png) no-repeat 50%;
+  background: url(./img/b_urban_img.webp) no-repeat 50%;
   background-size: cover;
   padding: 150px 0;
   background-attachment: fixed;
