@@ -363,20 +363,17 @@ body {
   right: 15px;
 }
 .drawer-menu-button .sitemap-2dep {
-  height: 0;
+  display: none;
   background: rgba(255, 255, 255, 0.24);
   backdrop-filter: blur(2.5px);
   margin-top: 1px;
-  padding: 0px 20px;
+  padding: 20px;
   overflow: hidden;
-  transform: translateY(-10%);
-  transition: height 600ms ease-in-out, transform 600ms ease-in-out, padding 600ms ease-in-out;
+  transition: display 600ms ease-in-out, transform 600ms ease-in-out;
 }
 .drawer-menu-button.is-open .sitemap-2dep {
-  height: 100px;
   border-top: 1px solid #fff;
   padding: 20px;
-  transform: translateY(0%);
 }
 .modal-close-btn {
   font-size: 20px;

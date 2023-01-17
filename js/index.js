@@ -165,24 +165,24 @@ function fnMove2() {
 
 // menu is open
 
-const menuBtn = document.querySelectorAll(".drawer-menu-button");
+// const menuBtn = document.querySelectorAll(".drawer-menu-button");
 
-function accordMenu() {
-  for (let j = 0; j < menuBtn.length; j++) {
-    menuBtn[j].classList.remove("is-open");
-  }
-}
-for (let i = 0; i < menuBtn.length; i++) {
-  menuBtn[i].addEventListener("click", () => {
-    console.log(i);
-    if (menuBtn[i].classList.contains("is-open")) {
-      menuBtn[i].classList.remove("is-open");
-    } else {
-      accordMenu();
-      menuBtn[i].classList.add("is-open");
-    }
-  });
-}
+// function accordMenu() {
+//   for (let j = 0; j < menuBtn.length; j++) {
+//     menuBtn[j].classList.remove("is-open");
+//   }
+// }
+// for (let i = 0; i < menuBtn.length; i++) {
+//   menuBtn[i].addEventListener("click", () => {
+//     console.log(i);
+//     if (menuBtn[i].classList.contains("is-open")) {
+//       menuBtn[i].classList.remove("is-open");
+//     } else {
+//       accordMenu();
+//       menuBtn[i].classList.add("is-open");
+//     }
+//   });
+// }
 
 // location active
 const mapIcon1 = document.querySelector(".map-icon.so");
@@ -224,12 +224,13 @@ for (let i = 0; i < mapIcon.length; i++) {
   });
 }
 
-// $(".drawer-menu-button").click(function () {
-//   console.log($(this).siblings(".sitemap-2dep"));
-//   $(this).children(".sitemap-2dep").stop().slideToggle(300);
-//   $(this).toggleClass("on").siblings(".sitemap-2dep").removeClass("on");
-//   $(this).children(".sitemap-2dep").siblings(".sitemap-2dep").slideUp(300); // 1개씩 펼치기
-// });
+$(".drawer-menu-button h2").click(function (e) {
+  e.preventDefault();
+  $(this).parent("li").toggleClass("active");
+  $(this).siblings(".sitemap-2dep").stop().slideToggle();
+  $(this).parent("li").siblings("li").children(".sitemap-2dep").slideUp();
+  $(this).parent("li").siblings("li").removeClass("active");
+});
 
 const tabMenu = document.querySelector(".location-menu-con");
 const tabArrow = document.querySelector(".cur-location");
