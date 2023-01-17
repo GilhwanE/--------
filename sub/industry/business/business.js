@@ -29,11 +29,12 @@ $(".imgbox .txt .sec1").click(function () {
   }
 });
 
-$(".imgbox .txt .sec2").click(function () {
+$(".imgbox .txt .sec2").click(function (e) {
+  $(this).parent("li").toggleClass("active");
   if ($(".content-hide.sec2").is(":visible")) {
-    $(".content-hide.sec2").slideUp(699);
+    $(".content-hide.sec2").slideUp();
   } else {
-    $(".content-hide.sec2").slideDown(699);
+    $(".content-hide.sec2").slideDown();
   }
 });
 

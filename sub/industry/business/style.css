@@ -146,8 +146,7 @@
 }
 .content-hide {
   display: none;
-  overflow: hidden;
-  transition: display 300ms ease-in, overflow 300ms ease-in;
+  transition: display 300ms ease-in;
 }
 .content-circle ul {
   display: flex;
