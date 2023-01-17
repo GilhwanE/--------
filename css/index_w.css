@@ -1240,10 +1240,11 @@ body {
   .sitemap-2dep {
     background: rgba(255, 255, 255, 0.24);
     backdrop-filter: blur(2.5px);
-    padding: 0 15px;
     margin-top: 0;
     overflow: hidden;
-    transition: all 400ms cubic-bezier(0.24, 0.4, 0.4, 0.53);
+    padding: 20px;
+    overflow: hidden;
+    transition: display 600ms ease-in-out;
   }
   .sitemap-2dep li a {
     display: block;
@@ -1265,10 +1266,6 @@ body {
   }
   .sitemap-wrapper03 p {
     display: none;
-  }
-  .drawer-menu-button.is-open .sitemap-2dep {
-    padding: 15px 20px;
-    border-top: 1px solid #fff;
   }
 
   /* section02 */
