@@ -1238,6 +1238,7 @@ body {
     border-left: none;
   }
   .sitemap-2dep {
+    display: none;
     background: rgba(255, 255, 255, 0.24);
     backdrop-filter: blur(2.5px);
     margin-top: 0;
