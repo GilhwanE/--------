@@ -127,8 +127,12 @@
                           an agricultural corporation.
                         </p>
                         <ul class="sitemap-2dep">
-                          <li><a href="http://www.urban-farm.co.kr/" target="_blank">Urbanfarm</a></li>
-                          <li><a href="http://www.lambgoat.co.kr/" target="_blank">Lambgoat</a></li>
+                          <li>
+                            <a href="#urban-content" target="_blank">Urbanfarm</a>
+                          </li>
+                          <li>
+                            <a href="#lambgoat-content" target="_blank">Lambgoat</a>
+                          </li>
                         </ul>
                       </li>
                       <li class="drawer-menu-button">
@@ -258,7 +262,7 @@
 
       <section id="middle">
         <div class="container">
-          <div class="brand-content">
+          <div id="lambgoat-content" class="brand-content">
             <div class="brand-title main-tit">
               <h2 data-aos="fade-up">Lambgoat</h2>
               <p data-aos="fade-up">No.1 goat imported brand in Korea</p>
@@ -278,7 +282,7 @@
         </div>
 
         <div class="container">
-          <div class="brand-content urban">
+          <div id="urban-content" class="brand-content urban">
             <div class="brand-title main-tit">
               <h2 data-aos="fade-up">Urbanfarm</h2>
               <p data-aos="fade-up">A domestic &middot; foreign horticultural brand</p>
@@ -362,5 +366,11 @@
       AOS.init();
     </script>
     <script src="../../js/index.js"></script>
+
+    <script>
+      function onLinkClick() {
+        document.getElementsByTagName("urban-content")[0].scrollIntoView();
+      }
+    </script>
   </body>
 </html>
