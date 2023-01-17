@@ -141,6 +141,8 @@ label {
   align-items: center;
   margin: 0 auto;
   margin-top: 10px;
+  font-size: 20px;
+  line-height: 1;
 }
 .submit-btn img {
   width: 50px;

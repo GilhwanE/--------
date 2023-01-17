@@ -369,7 +369,7 @@ body {
   margin-top: 1px;
   padding: 20px;
   overflow: hidden;
-  transition: display 600ms ease-in-out, transform 600ms ease-in-out;
+  transition: display 400ms ease-in-out;
 }
 .drawer-menu-button.is-open .sitemap-2dep {
   border-top: 1px solid #fff;
