@@ -439,6 +439,8 @@
   .content-circle ul li p {
     font-size: 13px;
     line-height: 20px;
+    white-space: break-spaces;
+    word-break: keep-all;
   }
   .content-circle .point {
     font-size: 15px;
