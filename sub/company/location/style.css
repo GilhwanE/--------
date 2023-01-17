@@ -10,7 +10,8 @@
 }
 .map-icon.on {
   transform: scale(1.2) !important;
-  animation: motion 1.5s linear 0s infinite;
+  animation: motion 1.5s linear 0s infinite !important;
+  animation-fill-mode: backwards;
   margin-top: 0;
 }
 
@@ -247,4 +248,14 @@
     margin-top: 1px;
     white-space: nowrap;
   }
+}
+
+[data-aos="new-animation"] {
+  opacity: 0;
+  transform: translate3d(0, 100px, 0);
+  transition: transform, opacity 2.5s cubic-bezier(0.19, 1, 0.22, 1);
+}
+[data-aos="new-animation"].aos-animate {
+  opacity: 1;
+  transform: translateZ(0);
 }
