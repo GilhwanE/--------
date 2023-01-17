@@ -1248,6 +1248,9 @@ body {
     overflow: hidden;
     transition: display 400ms ease-in-out;
   }
+  .drawer-menu-button.active {
+    border-bottom: none !important;
+  }
   .sitemap-2dep li a {
     display: block;
   }
