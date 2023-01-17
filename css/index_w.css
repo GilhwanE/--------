@@ -690,7 +690,7 @@ body {
   position: relative;
 }
 .img_box li img {
-  width: 100%;
+  width: 318px;
   height: auto;
 }
 .img_box li .img_txt {
@@ -1078,8 +1078,8 @@ body {
   .back_txt.right p {
     font-size: 80px;
   }
-  .img_box img {
-    width: 532px;
+  .img_box li img {
+    width: 100%;
     height: auto;
   }
   .slide_img-box img {
@@ -1330,7 +1330,10 @@ body {
     width: 277px;
     height: auto;
   }
-  .back_txt.right {
+  .img_box li img {
+    width: 100%;
+  }
+  .img_box img .back_txt.right {
     display: block;
     z-index: 11;
   }
