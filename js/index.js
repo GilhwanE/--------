@@ -163,27 +163,6 @@ function fnMove2() {
   );
 }
 
-// menu is open
-
-// const menuBtn = document.querySelectorAll(".drawer-menu-button");
-
-// function accordMenu() {
-//   for (let j = 0; j < menuBtn.length; j++) {
-//     menuBtn[j].classList.remove("is-open");
-//   }
-// }
-// for (let i = 0; i < menuBtn.length; i++) {
-//   menuBtn[i].addEventListener("click", () => {
-//     console.log(i);
-//     if (menuBtn[i].classList.contains("is-open")) {
-//       menuBtn[i].classList.remove("is-open");
-//     } else {
-//       accordMenu();
-//       menuBtn[i].classList.add("is-open");
-//     }
-//   });
-// }
-
 // location active
 const mapIcon1 = document.querySelector(".map-icon.so");
 const mapIcon2 = document.querySelector(".map-icon.gy");
@@ -192,7 +171,6 @@ const mapIcon4 = document.querySelector(".map-icon.de");
 
 const mapIcon = document.querySelectorAll(".map-icon");
 const mapBox = document.querySelectorAll(".map-box dl");
-console.log(mapIcon);
 function handlemapIcon() {
   for (let j = 0; j < mapIcon.length; j++) {
     mapIcon[j].classList.remove("on");
