@@ -54,7 +54,7 @@ body {
 }
 .mainVisualControls {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 0%;
   transform: translateY(-50%);
   width: 100%;
@@ -583,11 +583,11 @@ body {
 #banner .slide-common {
   position: absolute;
   right: 103px;
-  bottom: 0;
+  bottom: 40px;
   z-index: 1;
 }
 #banner .slide-common img {
-  width: 100%;
+  width: 700px;
   height: 100%;
 }
 /* #banner .main_visual::before {
@@ -603,7 +603,7 @@ body {
 .main_visual-txt-con {
   position: absolute;
   height: auto;
-  top: 50%;
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -625,7 +625,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   letter-spacing: -0.05em;
-  margin-top: 200px;
+  margin-top: 260px;
   color: #ffffff;
 }
 .main-visual-control {
