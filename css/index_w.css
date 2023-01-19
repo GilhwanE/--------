@@ -579,6 +579,7 @@ body {
 #banner .main_visual img {
   width: 100%;
   height: 100vh;
+  object-fit: cover;
 }
 #banner .slide-common {
   position: absolute;
@@ -1170,6 +1171,9 @@ body {
   #header .headerInner {
     padding: 0 40px;
   }
+  #banner .slide-common img {
+    width: 100%;
+  }
   .mainVisualControls .con-inner {
     max-width: 520px;
   }
@@ -1186,7 +1190,6 @@ body {
     margin-top: 120px;
     white-space: nowrap;
   }
-
   .mainVisualControls .con-inner .btn {
     position: absolute;
     top: 10rem;
