@@ -35,6 +35,7 @@ $(document).ready(function () {
       header.classList.remove("on");
     });
   });
+
   gnbItem1.addEventListener("mouseover", () => {
     gnbMenu1.classList.add("active");
     gnbMenu2.classList.remove("active");
