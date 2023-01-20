@@ -6,7 +6,7 @@
   background: url(./img/loaction-icon.svg) no-repeat center;
   width: 38px;
   height: 50px;
-  transition: all 300ms ease-in;
+  transition: transform, animation 300ms ease-in;
 }
 .map-icon.on {
   transform: scale(1.2) !important;
@@ -253,7 +253,7 @@
 [data-aos="new-animation"] {
   opacity: 0;
   transform: translate3d(0, 100px, 0);
-  transition: transform, opacity 2.5s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: transform, opacity 2.5s cubic-bezier(0.19, 1, 0.22, 1), animation 300ms;
 }
 [data-aos="new-animation"].aos-animate {
   opacity: 1;
