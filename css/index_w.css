@@ -1008,6 +1008,7 @@ body {
 }
 #wrap.en .sitemap-wrapper03 p {
   white-space: normal;
+  height: 60px;
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
