@@ -379,6 +379,11 @@
     font-size: 16px;
     line-height: 16px;
   }
+  .imgbox .img,
+  .imgbox.two .img {
+    background-attachment: unset;
+    padding: 120px 0;
+  }
   .content-img {
     margin-top: 0;
     margin-bottom: 50px;

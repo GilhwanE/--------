@@ -197,6 +197,7 @@
 @media screen and (max-width: 600px) {
   .main-info-txt {
     padding: 0 15px;
+    bottom: -4.5rem;
   }
   .history-list {
     padding-top: 25px;
