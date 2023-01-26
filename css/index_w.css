@@ -366,6 +366,9 @@ body {
 .en #wrap.en .sitemap-wrapper03 p {
   height: 100px;
 }
+#wrap.en .sitemap-wrapper03 p br {
+  display: none;
+}
 .en .sitemap-wrapper03 > div > ul > li {
   position: relative;
 }

@@ -22,13 +22,14 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #f4f4f4;
+  background-color: #87c313;
   transition: all 300ms ease-in;
   cursor: pointer;
 }
 .imgbox .txt button i {
   font-size: 18px;
-  color: #7d7d7d;
+  color: white;
+  font-weight: 900;
 }
 .imgbox .txt .on {
   transform: rotate(180deg);
