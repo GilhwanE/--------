@@ -79,9 +79,11 @@
     width: 249px;
     height: 249px;
   }
-
   .wrap-list ul li p br {
     display: none;
+  }
+  .main-info-txt {
+    gap: 78px;
   }
 }
 

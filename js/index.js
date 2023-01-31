@@ -29,6 +29,7 @@ $(document).ready(function () {
     header.classList.add("on");
   });
 
+  // GNB
   gnbMenu.forEach((item) => {
     item.addEventListener("mouseleave", () => {
       item.classList.remove("active");
@@ -36,30 +37,60 @@ $(document).ready(function () {
     });
   });
 
-  gnbItem1.addEventListener("mouseover", () => {
-    gnbMenu1.classList.add("active");
-    gnbMenu2.classList.remove("active");
-    gnbMenu3.classList.remove("active");
-    gnbMenu4.classList.remove("active");
+  for (let i = 0; i < gnbList.length; i++) {
+    gnbList[i].addEventListener("mouseover", function () {
+      for (let i = 0; i < gnbMenu.length; i++) {
+        gnbMenu[i].className = "nav-undermenu";
+      }
+      document.getElementById(this.dataset.id).className = "nav-undermenu active";
+    });
+  }
+
+  // 네비 메뉴
+  $(".nav ul li").mouseenter(function () {
+    var thisIdx = $(this).index();
+    $(this).addClass("active").siblings().removeClass("active");
+    $(".drop_menu").css({ display: "flex" });
+    $(".drop_menu .depth01").eq(thisIdx).addClass("active").siblings().removeClass("active");
   });
-  gnbItem2.addEventListener("mouseover", () => {
-    gnbMenu2.classList.add("active");
-    gnbMenu1.classList.remove("active");
-    gnbMenu3.classList.remove("active");
-    gnbMenu4.classList.remove("active");
+
+  $(".drop_menu_box").mouseleave(function () {
+    $(".drop_menu").hide();
+    $(".nav ul li").removeClass("active");
   });
-  gnbItem3.addEventListener("mouseover", () => {
-    gnbMenu3.classList.add("active");
-    gnbMenu1.classList.remove("active");
-    gnbMenu2.classList.remove("active");
-    gnbMenu4.classList.remove("active");
+
+  $(".drop_menu .depth01").mouseenter(function () {
+    var thisIdx = $(this).index();
+    $(this).addClass("active").siblings().removeClass("active");
+    $(".nav ul li").eq(thisIdx).addClass("active").siblings().removeClass("active");
   });
-  gnbItem4.addEventListener("mouseover", () => {
-    gnbMenu4.classList.add("active");
-    gnbMenu1.classList.remove("active");
-    gnbMenu2.classList.remove("active");
-    gnbMenu3.classList.remove("active");
-  });
+
+  // contains(active) => remove active => add active
+  // = 지우고 추가해 ,
+  // gnbItem1.addEventListener("mouseover", () => {
+  //   gnbMenu1.classList.add("active");
+  //   gnbMenu2.classList.remove("active");
+  //   gnbMenu3.classList.remove("active");
+  //   gnbMenu4.classList.remove("active");
+  // });
+  // gnbItem2.addEventListener("mouseover", () => {
+  //   gnbMenu2.classList.add("active");
+  //   gnbMenu1.classList.remove("active");
+  //   gnbMenu3.classList.remove("active");
+  //   gnbMenu4.classList.remove("active");
+  // });
+  // gnbItem3.addEventListener("mouseover", () => {
+  //   gnbMenu3.classList.add("active");
+  //   gnbMenu1.classList.remove("active");
+  //   gnbMenu2.classList.remove("active");
+  //   gnbMenu4.classList.remove("active");
+  // });
+  // gnbItem4.addEventListener("mouseover", () => {
+  //   gnbMenu4.classList.add("active");
+  //   gnbMenu1.classList.remove("active");
+  //   gnbMenu2.classList.remove("active");
+  //   gnbMenu3.classList.remove("active");
+  // });
 
   header.addEventListener("focusout", () => {
     header.classList.remove("on");

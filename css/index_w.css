@@ -493,9 +493,11 @@ body {
   left: 0;
   top: 100px;
   opacity: 0;
+  visibility: hidden;
 }
 .nav-undermenu.active {
   opacity: 1;
+  visibility: visible;
   height: 222px;
 }
 .nav-undermenu img {
@@ -549,7 +551,7 @@ body {
 }
 .under_inner .link_list {
   display: flex;
-  width: 356px;
+  width: 100%;
   max-width: 100%;
   gap: 50px;
 }

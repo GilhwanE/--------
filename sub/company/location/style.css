@@ -6,12 +6,12 @@
   background: url(./img/loaction-icon.svg) no-repeat center;
   width: 38px;
   height: 50px;
-  transition: transform, animation 300ms ease-in;
+  transition: transform 100ms ease-in-out, animation 300ms ease-in-out;
 }
 .map-icon.on {
-  transform: scale(1.2) !important;
+  transform: scale(1.1) !important;
   animation: motion 1.5s linear 0s infinite !important;
-  animation-fill-mode: backwards;
+  animation-fill-mode: both;
   margin-top: 0;
 }
 
@@ -91,6 +91,16 @@
   color: #191919;
   margin-bottom: 40px;
 }
+.en .map-box:nth-child(1) dl dt,
+.en .map-box:nth-child(2) dl dt {
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+.en .map-box:nth-child(1) dt::after,
+.en .map-box:nth-child(2) dt::after {
+  top: 60px;
+}
+
 .map-box dl dt::after {
   content: "";
   position: absolute;
@@ -144,11 +154,14 @@
     top: 32px;
   }
   .wrap-map {
-    background-size: 60%;
+    background: url(./img/map_img.png) no-repeat 50% 0;
   }
 }
 
 @media screen and (max-width: 1023px) {
+  .visual-img-con {
+    background: url(../../../newimg/ceo_bg.png) no-repeat 33%;
+  }
   .map-image {
     background: url(./img/map_img.png) no-repeat center;
     height: 60vh;
@@ -219,10 +232,23 @@
     width: 100%;
     min-width: 122px;
     padding: 14px 15px;
-    height: 100%;
+    height: 100vh;
   }
   .map-box dl dt {
     font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 17px;
+    white-space: nowrap;
+  }
+  .map-box dl dt br {
+    display: none;
+  }
+  .en .map-box:nth-child(1) dt::after,
+  .en .map-box:nth-child(2) dt::after {
+    top: 25px;
+  }
+  .en .map-box:nth-child(1) dl dt,
+  .en .map-box:nth-child(2) dl dt {
     line-height: 20px;
     margin-bottom: 17px;
   }
@@ -234,19 +260,28 @@
     top: 25px;
   }
   .map-image {
-    height: 50vh;
+    height: 60vh;
     background-size: 100%;
   }
 }
 
 @media screen and (max-width: 280px) {
+  .map-image {
+    height: 50vh;
+  }
+  .map-box dl {
+    height: 74px;
+  }
   .map-box dl dt,
   .map-box dl dd {
-    font-size: 11px;
+    font-size: 10px;
   }
   .map-box dl dd:last-child {
     margin-top: 1px;
     white-space: nowrap;
+  }
+  .map-icon.se {
+    top: 24%;
   }
 }
 

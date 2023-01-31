@@ -137,6 +137,9 @@
 }
 
 @media screen and (max-width: 1023px) {
+  .visual-img-con {
+    background: url(../../../newimg/ceo_bg.png) no-repeat 33%;
+  }
   .main-info-txt {
     bottom: -8.5rem;
   }
