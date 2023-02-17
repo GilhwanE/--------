@@ -404,16 +404,76 @@ body {
 .sitemap-wrapper03 p {
   display: none;
 }
-
 .sitemap-wrapper03 > div > ul > li,
 .sitemap-wrapper03 > div > ul > li:first-child {
   border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+}
+.modal-close {
+  top: 24px;
+  right: 24px;
+}
+.modal-popup {
+  width: calc(100% - 30px);
+}
+.modal-popup .inner .title {
+  font-size: 18px;
+  line-height: 24.5px;
+}
+.modal-popup .inner p {
+  font-size: 12px;
+  line-height: 18px;
+  padding: 0 13px;
+}
+.modal-btn.check span {
+  font-size: 13px;
+  line-height: 20px;
+}
+.modal-popup .inner .pc {
+  display: none;
+}
+.modal-popup .inner .mobile {
+  display: block;
+  margin-top: 0;
+}
+.modal-popup .inner {
+  margin-bottom: 42px;
+}
+.modal-btn.check.green {
+  margin-left: 15px;
+}
+.modal-btn.check {
+  width: 150px;
+}
+.modal-popup .inner .title br {
+  display: none;
 }
 
 @media screen and (max-width: 375px) {
   .content_txt p {
     font-size: 14px;
     line-height: 18px;
+  }
+  .modal-btn.check {
+    padding: 10px 0;
+    width: 100px;
+  }
+  .modal-popup .inner img {
+    height: 174px;
+  }
+  .modal-btn.check span {
+    font-size: 13px;
+    line-height: 20px;
+  }
+  .modal-popup .inner .title {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 18px;
+    margin-top: 26px;
+  }
+
+  .modal-popup .inner p {
+    font-size: 11px;
+    line-height: 16px;
   }
 }
 @media screen and (max-width: 320px) {
@@ -425,5 +485,8 @@ body {
   }
   .link_btn a p {
     font-size: 11px;
+  }
+  .modal-popup .inner .fold {
+    display: block;
   }
 }
